@@ -5,6 +5,7 @@ class GcTerm extends Component {
     constructor(props) {
         super(props);
         this.termID = Date.now();
+        this.term = null;
     }
 
     componentDidMount() {
@@ -14,6 +15,7 @@ class GcTerm extends Component {
             rows: 24,
             useStyle: true,
         });
+        this.term.open(termbox);
     }
 
     render() {
