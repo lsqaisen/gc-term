@@ -4,7 +4,7 @@
   "main": "index.js",
   "style": "style.css",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack -w",
     "dev": "rimraf lib && babel src --watch --copy-files --source-maps --extensions .es6,.es,.jsx --out-dir lib",
     "compile": "rimraf lib && babel src --copy-files --source-maps --extensions .es6,.es,.jsx --out-dir lib"
   },
@@ -29,7 +29,8 @@
     "css-loader": "^0.28.7",
     "less-loader": "^4.0.5",
     "rimraf": "^2.6.2",
-    "style-loader": "^0.19.1"
+    "style-loader": "^0.19.1",
+    "webpack-dev-server": "^2.9.7"
   },
   "directories": {
     "example": "example",
